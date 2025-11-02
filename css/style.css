@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Inter", sans-serif;
 }
 body {
     min-height: 100vh;
@@ -28,8 +29,8 @@ nav {
     font-family: "Inter", sans-serif;
     font-weight: 400;
     background-color:blanchedalmond;
-    position: sticky;
-    top: 0;
+    /* position: sticky;
+    top: 0; */
     height: 80px;
     backdrop-filter: blur(100%);
 }
@@ -154,7 +155,7 @@ nav {
 #all_food_logo img{
     width: 148px;
     height: 30px;
-    opacity: 55%;
+    opacity: 75%;
     /* margin: 0 20px; */
 
 }
@@ -208,4 +209,69 @@ nav {
 }
 .foffer{
     font-size: 14px;
+}
+
+
+
+
+/* < !-- Our Benifit Section --> */
+
+#benifit{
+    display: grid;
+    padding: 0 130px;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 200px;
+    margin-bottom: 300px;
+    height: 608px;
+    align-items: center;
+}
+
+.leftbenifit{
+    background-color: #F3FAFB;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 608px;
+}
+.leftbenifit img{
+    width: 445px;
+    height: 513px;
+
+}
+.rightbenifit{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.obst{
+    font-size: 14px;
+    color: #1D1D1F;
+    margin-bottom: 20px;
+    
+}
+
+.obheader{
+    font-size: 48px;
+    font-weight: 600;
+    color: #1D1D1F;
+    line-height: auto;
+    margin-bottom: 50px;    
+}
+.obl li{
+    list-style: none;
+    position: relative;
+    left: 30px;
+    font-size: 16px;
+    padding: 8px;
+}
+
+.obl li::before {
+    content: "✔";
+    position: absolute;
+    left: -30px;
+    color: #06C167;
+    font-weight: bold;
+    
 }
